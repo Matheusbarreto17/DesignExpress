@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+<head th:replace="~{fragmentos/header :: header}"></head>
+<body>
+    <div class="d-flex">
+        <!-- Sidebar -->
+        <aside th:replace="~{fragmentos/sidebar :: sidebar}" class="flex-shrink-0"></aside>
+
+        <!-- Conteúdo Principal -->
+        <main class="flex-grow-1 p-3">
+            <h2 th:text="${title}">Título da Página</h2>
+            <p th:text="${message}">Mensagem de Boas-Vindas</p>
+        </main>
+    </div>
+
+    <!-- Footer -->
+    <footer th:replace="~{fragmentos/footer :: footer}"></footer>
+</body>
+</html>
